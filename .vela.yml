@@ -1,0 +1,8 @@
+version: "1"
+steps:
+  - name: test
+    image: target/vela-kaniko:latest
+    pull: always
+    parameters:
+      registry: index.docker.io
+      repo: index.docker.io/jayceejr/jumpdai
