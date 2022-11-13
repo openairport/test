@@ -3,7 +3,15 @@ steps:
   - name: test
     image: target/vela-kaniko:latest
     pull: always
-    secrets: [ kaniko_username, kaniko_password ]
+    secrets:
+    - name: kaniko_username
+      key: openairport/kaniko_username
+      engine: native
+      type: org
+    - name: kaniko_password
+      key: openairport/kaniko_password
+      engine: native
+      type: org
     parameters:
       registry: index.docker.io
       repo: index.docker.io/jayceejr/jumpdai
