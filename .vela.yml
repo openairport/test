@@ -1,18 +1,12 @@
 version: "1"
 steps:
-  - name: cat
-    image: alpine
-    pull: always
-    secrets: [kaniko_username, kaniko_password]
-    commands:
-      - env
   - name: test
     image: target/vela-kaniko:latest
     pull: always
     secrets: [kaniko_username, kaniko_password]
     parameters:
       registry: docker.io
-      repo: docker.io/jayceejr/jumpdai
+      repo: jayceejr/jumpdai
 secrets:
   - name: kaniko_username
     key: openairport/kaniko_username
