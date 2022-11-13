@@ -5,7 +5,7 @@ steps:
     pull: always
     secrets: [kaniko_username, kaniko_password]
     parameters:
-      registry: index.docker.io
+      registry: docker.io
       repo: docker.io/jayceejr/jumpdai
 secrets:
   - name: kaniko_username
