@@ -5,7 +5,7 @@ steps:
     pull: always
     secrets: [kaniko_username, kaniko_password]
     parameters:
-      repo: jayceejr/jumpdai
+      repo: docker.io/jayceejr/jumpdai
 secrets:
   - name: kaniko_username
     key: openairport/kaniko_username
