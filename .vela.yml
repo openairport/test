@@ -6,7 +6,7 @@ steps:
     secrets: [kaniko_username, kaniko_password]
     parameters:
       registry: index.docker.io
-      repo: index.docker.io/jayceejr/jumpdai
+      repo: docker.io/jayceejr/jumpdai
 secrets:
   - name: kaniko_username
     key: openairport/kaniko_username
