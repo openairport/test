@@ -1,7 +1,7 @@
 version: "1"
 steps:
   - name: test
-    image: target/vela-kaniko:latest
+    image: target/vela-kaniko:v0.9.0
     pull: always
     secrets: [kaniko_username, kaniko_password]
     parameters:
