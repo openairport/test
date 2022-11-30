@@ -5,6 +5,7 @@ steps:
     pull: always
     secrets: [kaniko_username, kaniko_password]
     parameters:
+      registry: index.docker.io
       repo: index.docker.io/jayceejr/test
 secrets:
   - name: kaniko_username
